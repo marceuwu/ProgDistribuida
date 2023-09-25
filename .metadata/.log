@@ -1,4 +1,4 @@
-!SESSION 2023-08-22 00:02:56.444 -----------------------------------------------
+!SESSION 2023-09-24 19:52:41.217 -----------------------------------------------
 eclipse.buildId=4.19.1.202308011926
 java.version=17.0.7
 java.vendor=Eclipse Adoptium
@@ -6,347 +6,83 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
 Framework arguments:  -product org.springframework.boot.ide.branding.sts4
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
 
-!ENTRY org.eclipse.emf.ecore 2 0 2023-08-22 00:03:35.671
-!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+This is a continuation of log file C:\Users\marce\source\repos\ProgDistribuida\.metadata\.bak_1.log
+Created Time: 2023-09-24 19:58:14.931
 
-!ENTRY org.eclipse.jface 2 0 2023-08-22 00:04:35.550
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-22 00:04:35.550
-!MESSAGE A conflict occurred for CTRL+SHIFT+T:
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
-		Open a type in a Java editor,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
-		,
-		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
-		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-
-!ENTRY org.eclipse.egit.ui 2 0 2023-08-22 00:04:40.105
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\marce'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2023-08-30 08:32:40.785 -----------------------------------------------
-eclipse.buildId=4.19.1.202308011926
-java.version=17.0.7
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
-Framework arguments:  -product org.springframework.boot.ide.branding.sts4
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
-
-!ENTRY org.eclipse.emf.ecore 2 0 2023-08-30 08:32:43.799
-!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
-
-!ENTRY org.eclipse.jface 2 0 2023-08-30 08:33:09.619
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-30 08:33:09.619
-!MESSAGE A conflict occurred for CTRL+SHIFT+T:
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
-		Open a type in a Java editor,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
-		,
-		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
-		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-
-!ENTRY org.eclipse.egit.ui 2 0 2023-08-30 08:33:14.946
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\marce'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-30 08:48:31.008
-!MESSAGE Classpath changed for project: Prueba
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-30 08:50:32.367
-!MESSAGE Classpath changed for project: Prueba
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-30 08:52:12.811
-!MESSAGE Classpath changed for project: Prueba
-!SESSION 2023-08-30 23:26:05.735 -----------------------------------------------
-eclipse.buildId=4.19.1.202308011926
-java.version=17.0.7
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
-Framework arguments:  -product org.springframework.boot.ide.branding.sts4
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
-
-!ENTRY org.eclipse.emf.ecore 2 0 2023-08-30 23:26:06.591
-!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
-
-!ENTRY org.eclipse.jface 2 0 2023-08-30 23:26:12.018
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-30 23:26:12.018
-!MESSAGE A conflict occurred for CTRL+SHIFT+T:
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
-		Open a type in a Java editor,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
-		,
-		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
-		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-
-!ENTRY org.eclipse.egit.ui 2 0 2023-08-30 23:26:14.684
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\marce'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2023-08-31 08:15:54.726 -----------------------------------------------
-eclipse.buildId=4.19.1.202308011926
-java.version=17.0.7
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
-Framework arguments:  -product org.springframework.boot.ide.branding.sts4
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
-
-!ENTRY org.eclipse.emf.ecore 2 0 2023-08-31 08:15:55.568
-!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
-
-!ENTRY org.eclipse.jface 2 0 2023-08-31 08:17:15.528
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-31 08:17:15.528
-!MESSAGE A conflict occurred for CTRL+SHIFT+T:
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
-		Open a type in a Java editor,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
-		,
-		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
-		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-
-!ENTRY org.eclipse.egit.ui 2 0 2023-08-31 08:17:18.183
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\marce'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2023-08-31 08:18:40.526 -----------------------------------------------
-eclipse.buildId=4.19.1.202308011926
-java.version=17.0.7
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
-Framework arguments:  -product org.springframework.boot.ide.branding.sts4
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
-
-!ENTRY org.eclipse.emf.ecore 2 0 2023-08-31 08:18:41.295
-!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
-
-!ENTRY org.eclipse.jface 2 0 2023-08-31 08:18:56.993
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-31 08:18:56.993
-!MESSAGE A conflict occurred for CTRL+SHIFT+T:
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
-		Open a type in a Java editor,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
-		,
-		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
-		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-
-!ENTRY org.eclipse.egit.ui 2 0 2023-08-31 08:18:59.071
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\marce'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-08-31 08:29:19.896
-!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
-START:
-C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
--cp
-C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\lib\*
--Dsts.lsp.client=eclipse
--Dlsp.completions.indentation.enable=true
--Xmx1024m
--XX:+HeapDumpOnOutOfMemoryError
--XX:TieredStopAtLevel=1
--Xlog:jni+resolve=off
--Dspring.config.location=file:C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
--XX:ErrorFile=C:/Users/marce/source/repos/ProgDistribuida/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1693492159896
-org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
---languageserver.hover-timeout=225
-END
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-31 08:29:19.898
-!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-08-31 08:29:19.908
-!MESSAGE Started org.springframework.tooling.boot.ls LS process 22588
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-31 08:49:24.321
-!MESSAGE Classpath changed for project: PruebaSB
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-31 08:49:26.367
-!MESSAGE Classpath changed for project: PruebaSB
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-31 08:49:26.369
-!MESSAGE Boot project ADDED: PruebaSB
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-31 08:49:26.370
-!MESSAGE Starting Boot LS...
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-31 08:49:26.371
-!MESSAGE Started Boot LS process
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-31 08:49:28.297
-!MESSAGE Classpath changed for project: PruebaSB
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-31 08:49:46.310
-!MESSAGE Classpath changed for project: PruebaSB
-!SESSION 2023-09-01 08:10:15.836 -----------------------------------------------
-eclipse.buildId=4.19.1.202308011926
-java.version=17.0.7
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
-Framework arguments:  -product org.springframework.boot.ide.branding.sts4
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
-
-!ENTRY org.eclipse.emf.ecore 2 0 2023-09-01 08:10:18.135
-!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
-
-!ENTRY org.eclipse.jface 2 0 2023-09-01 08:10:35.237
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-01 08:10:35.237
-!MESSAGE A conflict occurred for CTRL+SHIFT+T:
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
-		Open a type in a Java editor,
-		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-Binding(CTRL+SHIFT+T,
-	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
-		,
-		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
-		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.contexts.window,,,system)
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-01 08:10:39.867
-!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
-START:
-C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
--cp
-C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\lib\*
--Dsts.lsp.client=eclipse
--Dlsp.completions.indentation.enable=true
--Xmx1024m
--XX:+HeapDumpOnOutOfMemoryError
--XX:TieredStopAtLevel=1
--Xlog:jni+resolve=off
--Dspring.config.location=file:C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
--XX:ErrorFile=C:/Users/marce/source/repos/ProgDistribuida/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1693577439867
-org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
---languageserver.hover-timeout=225
-END
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-01 08:10:39.868
-!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-01 08:10:39.889
-!MESSAGE Started org.springframework.tooling.boot.ls LS process 1656
-
-!ENTRY org.eclipse.egit.ui 2 0 2023-09-01 08:10:41.105
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\marce'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-01 08:10:41.309
-!MESSAGE Boot project ADDED: PruebaSB
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-01 08:10:41.312
-!MESSAGE Starting Boot LS...
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-01 08:10:41.313
-!MESSAGE Started Boot LS process
-
-!ENTRY org.eclipse.jface 2 0 2023-09-01 08:26:49.424
-!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-01 08:26:49.424
-!MESSAGE A conflict occurred for CTRL+SHIFT+C:
-Binding(CTRL+SHIFT+C,
-	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
-		,
-		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
-		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.textEditorScope,,,system)
-Binding(CTRL+SHIFT+C,
-	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
-		,
-		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
-		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
-		,,true),null),
-	org.eclipse.ui.defaultAcceleratorConfiguration,
-	org.eclipse.ui.textEditorScope,,,system)
-
-!ENTRY org.eclipse.lsp4e 2 0 2023-09-01 08:26:52.462
-!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!ENTRY org.eclipse.ui 4 0 2023-09-24 19:58:14.932
+!MESSAGE Unhandled event loop exception
 !STACK 0
-java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
-	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
-	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
-	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
-	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+java.lang.IllegalStateException: startLine (46) does not match endLine (47)
+	at org.eclipse.jface.text.projection.ProjectionMapping.toImageLine(ProjectionMapping.java:462)
+	at org.eclipse.jface.text.TextViewer.modelLine2WidgetLine(TextViewer.java:5208)
+	at org.eclipse.jface.text.source.MatchingCharacterPainter.handleDrawRequest(MatchingCharacterPainter.java:215)
+	at org.eclipse.jface.text.source.MatchingCharacterPainter.paintControl(MatchingCharacterPainter.java:185)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1536)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jface 4 2 2023-09-24 19:58:15.113
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface".
+!STACK 0
+java.lang.IllegalStateException: startLine (46) does not match endLine (47)
+	at org.eclipse.jface.text.projection.ProjectionMapping.toImageLine(ProjectionMapping.java:462)
+	at org.eclipse.jface.text.TextViewer.modelLine2WidgetLine(TextViewer.java:5208)
+	at org.eclipse.jface.text.source.MatchingCharacterPainter.handleDrawRequest(MatchingCharacterPainter.java:215)
+	at org.eclipse.jface.text.source.MatchingCharacterPainter.deactivate(MatchingCharacterPainter.java:177)
+	at org.eclipse.jface.text.source.MatchingCharacterPainter.paint(MatchingCharacterPainter.java:348)
+	at org.eclipse.jface.text.PaintManager.paint(PaintManager.java:305)
+	at org.eclipse.jface.text.PaintManager.selectionChanged(PaintManager.java:332)
+	at org.eclipse.jface.viewers.Viewer$1.run(Viewer.java:151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:148)
+	at org.eclipse.jface.text.TextViewer.fireSelectionChanged(TextViewer.java:2691)
+	at org.eclipse.jface.text.TextViewer.selectionChanged(TextViewer.java:2667)
+	at org.eclipse.jface.text.TextViewer.selectionChanged(TextViewer.java:2661)
+	at org.eclipse.jface.text.TextViewer$1.widgetSelected(TextViewer.java:1770)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.custom.StyledText.sendSelectionEvent(StyledText.java:8070)
+	at org.eclipse.swt.custom.StyledText.doSelection(StyledText.java:2860)
+	at org.eclipse.swt.custom.StyledText.doMouseSelection(StyledText.java:2437)
+	at org.eclipse.swt.custom.StyledText.doMouseLocationChange(StyledText.java:2422)
+	at org.eclipse.swt.custom.StyledText.handleMouseMove(StyledText.java:5903)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5431)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
@@ -374,31 +110,391 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.eclipse.lsp4e 2 0 2023-09-01 08:26:53.509
-!MESSAGE Could not get hover information due to timeout after 1000 milliseconds
+!ENTRY org.eclipse.ui 4 0 2023-09-24 19:58:15.215
+!MESSAGE Unhandled event loop exception
 !STACK 0
-java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:76)
-	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
-	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+java.lang.IllegalStateException: startLine (50) does not match endLine (51)
+	at org.eclipse.jface.text.projection.ProjectionMapping.toImageLine(ProjectionMapping.java:462)
+	at org.eclipse.jface.text.TextViewer.modelLine2WidgetLine(TextViewer.java:5208)
+	at org.eclipse.jface.text.JFaceTextUtil.modelLineToWidgetLine(JFaceTextUtil.java:250)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.doubleBufferPaint(LineNumberRulerColumn.java:698)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.lambda$2(LineNumberRulerColumn.java:614)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1627)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-01 08:32:22.475
-!MESSAGE Classpath changed for project: PruebaSB-1
+!ENTRY org.eclipse.ui 4 0 2023-09-24 19:58:16.532
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: startLine (50) does not match endLine (51)
+	at org.eclipse.jface.text.projection.ProjectionMapping.toImageLine(ProjectionMapping.java:462)
+	at org.eclipse.jface.text.TextViewer.modelLine2WidgetLine(TextViewer.java:5208)
+	at org.eclipse.jface.text.JFaceTextUtil.modelLineToWidgetLine(JFaceTextUtil.java:250)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.doubleBufferPaint(LineNumberRulerColumn.java:698)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.lambda$2(LineNumberRulerColumn.java:614)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1627)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-01 08:32:22.476
-!MESSAGE Boot project ADDED: PruebaSB-1
+!ENTRY org.eclipse.ui 4 0 2023-09-24 19:58:17.033
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: startLine (49) does not match endLine (50)
+	at org.eclipse.jface.text.projection.ProjectionMapping.toImageLine(ProjectionMapping.java:462)
+	at org.eclipse.jface.text.TextViewer.modelLine2WidgetLine(TextViewer.java:5208)
+	at org.eclipse.jface.text.JFaceTextUtil.modelLineToWidgetLine(JFaceTextUtil.java:250)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.doubleBufferPaint(LineNumberRulerColumn.java:698)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.redraw(LineNumberRulerColumn.java:964)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.lambda$0(LineNumberRulerColumn.java:407)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-01 08:32:23.617
-!MESSAGE Classpath changed for project: PruebaSB-1
+!ENTRY org.eclipse.ui 4 0 2023-09-24 19:58:20.954
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: startLine (49) does not match endLine (50)
+	at org.eclipse.jface.text.projection.ProjectionMapping.toImageLine(ProjectionMapping.java:462)
+	at org.eclipse.jface.text.TextViewer.modelLine2WidgetLine(TextViewer.java:5208)
+	at org.eclipse.jface.text.JFaceTextUtil.modelLineToWidgetLine(JFaceTextUtil.java:250)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.doubleBufferPaint(LineNumberRulerColumn.java:698)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.redraw(LineNumberRulerColumn.java:964)
+	at org.eclipse.jface.internal.text.source.DiffPainter.redraw(DiffPainter.java:374)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-01 08:32:24.721
-!MESSAGE Classpath changed for project: PruebaSB-1
+!ENTRY org.eclipse.ui 4 0 2023-09-24 19:58:20.962
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: startLine (49) does not match endLine (50)
+	at org.eclipse.jface.text.projection.ProjectionMapping.toImageLine(ProjectionMapping.java:462)
+	at org.eclipse.jface.text.TextViewer.modelLine2WidgetLine(TextViewer.java:5208)
+	at org.eclipse.jface.text.JFaceTextUtil.modelLineToWidgetLine(JFaceTextUtil.java:250)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.doubleBufferPaint(LineNumberRulerColumn.java:698)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.redraw(LineNumberRulerColumn.java:964)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.lambda$0(LineNumberRulerColumn.java:407)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
 
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-01 08:50:56.162
-!MESSAGE Classpath changed for project: PruebaSB-1
-!SESSION 2023-09-04 22:37:45.142 -----------------------------------------------
+!ENTRY org.eclipse.ui 4 0 2023-09-24 19:58:24.414
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: startLine (49) does not match endLine (50)
+	at org.eclipse.jface.text.projection.ProjectionMapping.toImageLine(ProjectionMapping.java:462)
+	at org.eclipse.jface.text.TextViewer.modelLine2WidgetLine(TextViewer.java:5208)
+	at org.eclipse.jface.text.JFaceTextUtil.modelLineToWidgetLine(JFaceTextUtil.java:250)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.doubleBufferPaint(LineNumberRulerColumn.java:698)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.lambda$2(LineNumberRulerColumn.java:614)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1627)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:609)
+	at org.eclipse.ui.internal.SaveablesList.promptForSaving(SaveablesList.java:722)
+	at org.eclipse.ui.internal.SaveablesList.promptForSaving(SaveablesList.java:629)
+	at org.eclipse.ui.internal.SaveablesList.promptForSavingIfNecessary(SaveablesList.java:608)
+	at org.eclipse.ui.internal.SaveablesList.preCloseParts(SaveablesList.java:550)
+	at org.eclipse.ui.internal.SaveablesList.preCloseParts(SaveablesList.java:484)
+	at org.eclipse.ui.internal.WorkbenchWindow$2.saveParts(WorkbenchWindow.java:776)
+	at org.eclipse.ui.internal.Workbench.saveAllParts(Workbench.java:1325)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1051)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1391)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1391)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1367)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1717)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1744)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1744)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1753)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:504)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:570)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1550)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4745)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4844)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4844)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui 4 0 2023-09-24 19:58:25.888
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalStateException: startLine (49) does not match endLine (50)
+	at org.eclipse.jface.text.projection.ProjectionMapping.toImageLine(ProjectionMapping.java:462)
+	at org.eclipse.jface.text.TextViewer.modelLine2WidgetLine(TextViewer.java:5208)
+	at org.eclipse.jface.text.JFaceTextUtil.modelLineToWidgetLine(JFaceTextUtil.java:250)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.doubleBufferPaint(LineNumberRulerColumn.java:698)
+	at org.eclipse.jface.text.source.LineNumberRulerColumn.lambda$2(LineNumberRulerColumn.java:614)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1627)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.RedrawWindow(Native Method)
+	at org.eclipse.swt.widgets.Control.update(Control.java:4587)
+	at org.eclipse.swt.widgets.Display.update(Display.java:5010)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:830)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:609)
+	at org.eclipse.ui.internal.SaveablesList.promptForSaving(SaveablesList.java:722)
+	at org.eclipse.ui.internal.SaveablesList.promptForSaving(SaveablesList.java:629)
+	at org.eclipse.ui.internal.SaveablesList.promptForSavingIfNecessary(SaveablesList.java:608)
+	at org.eclipse.ui.internal.SaveablesList.preCloseParts(SaveablesList.java:550)
+	at org.eclipse.ui.internal.SaveablesList.preCloseParts(SaveablesList.java:484)
+	at org.eclipse.ui.internal.WorkbenchWindow$2.saveParts(WorkbenchWindow.java:776)
+	at org.eclipse.ui.internal.Workbench.saveAllParts(Workbench.java:1325)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1051)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1391)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1391)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1367)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1717)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1744)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1744)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1753)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:504)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:570)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1550)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4745)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4844)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4844)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2306)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2023-09-24 19:58:27.975 -----------------------------------------------
 eclipse.buildId=4.19.1.202308011926
 java.version=17.0.7
 java.vendor=Eclipse Adoptium
@@ -406,12 +502,12 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
 Framework arguments:  -product org.springframework.boot.ide.branding.sts4
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
 
-!ENTRY org.eclipse.emf.ecore 2 0 2023-09-04 22:37:47.402
+!ENTRY org.eclipse.emf.ecore 2 0 2023-09-24 19:58:28.695
 !MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
 
-!ENTRY org.eclipse.jface 2 0 2023-09-04 22:38:07.027
+!ENTRY org.eclipse.jface 2 0 2023-09-24 19:58:47.645
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-04 22:38:07.027
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-24 19:58:47.645
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
@@ -430,52 +526,9 @@ Binding(CTRL+SHIFT+T,
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
-!ENTRY org.eclipse.egit.ui 2 0 2023-09-04 22:38:15.500
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\marce'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 22:38:16.525
-!MESSAGE Boot project ADDED: PruebaSB
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 22:38:16.527
-!MESSAGE Starting Boot LS...
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 22:38:16.530
-!MESSAGE Started Boot LS process
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 22:38:16.750
-!MESSAGE Boot project ADDED: PruebaSB-1
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-04 22:38:16.771
-!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
-START:
-C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
--cp
-C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\lib\*
--Dsts.lsp.client=eclipse
--Dlsp.completions.indentation.enable=true
--Xmx1024m
--XX:+HeapDumpOnOutOfMemoryError
--XX:TieredStopAtLevel=1
--Xlog:jni+resolve=off
--Dspring.config.location=file:C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
--XX:ErrorFile=C:/Users/marce/source/repos/ProgDistribuida/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1693888696770
-org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
---languageserver.hover-timeout=225
-END
-
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 22:38:16.771
-!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
-
-!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-04 22:38:16.799
-!MESSAGE Started org.springframework.tooling.boot.ls LS process 27724
-
-!ENTRY org.eclipse.jface 2 0 2023-09-04 22:41:00.450
+!ENTRY org.eclipse.jface 2 0 2023-09-24 19:58:51.791
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-04 22:41:00.450
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-24 19:58:51.791
 !MESSAGE A conflict occurred for CTRL+SHIFT+C:
 Binding(CTRL+SHIFT+C,
 	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
@@ -494,35 +547,60 @@ Binding(CTRL+SHIFT+C,
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
 
-!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 22:41:28.946
-!MESSAGE Classpath changed for project: PruebaSB-1
+!ENTRY org.eclipse.egit.ui 2 0 2023-09-24 19:58:52.279
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\marce'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
-!ENTRY org.eclipse.lsp4e 4 0 2023-09-04 22:43:48.978
-!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: The request (id: 77, method: 'textDocument/completion') has been cancelled
-!STACK 0
-java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: The request (id: 77, method: 'textDocument/completion') has been cancelled
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
-	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.computeCompletionProposals(LSContentAssistProcessor.java:114)
-	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:378)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:377)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
-	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
-Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: The request (id: 77, method: 'textDocument/completion') has been cancelled
-	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
-	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
-	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:283)
-	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
-	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
-	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-24 19:58:52.416
+!MESSAGE Boot project ADDED: AutoService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-24 19:58:52.417
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-24 19:58:52.420
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-24 19:58:52.450
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\marce\Downloads\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/Users/marce/source/repos/ProgDistribuida/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1695607132448
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-24 19:58:52.453
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-24 19:58:52.464
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 2576
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-24 19:59:49.172
+!MESSAGE Classpath changed for project: AutoService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-24 19:59:50.301
+!MESSAGE Classpath changed for project: AutoService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-24 20:02:51.557
+!MESSAGE Classpath changed for project: AutoService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-24 20:02:51.612
+!MESSAGE Classpath changed for project: AutoService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-24 20:02:53.337
+!MESSAGE Classpath changed for project: AutoService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-24 20:03:09.527
+!MESSAGE Classpath changed for project: AutoService

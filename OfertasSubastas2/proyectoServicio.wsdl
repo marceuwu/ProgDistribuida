@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://com.taller" targetNamespace="http://com.taller">
+    <wsdl:types>
+        <xs:schema targetNamespace="http://com.taller" elementFormDefault="qualified">
+            <xs:include schemaLocation="Estructura.xsd"/>
+            <xs:include schemaLocation="commons.xsd"/>
+        </xs:schema>
+    </wsdl:types>
+
+    <!-- Alta de un nuevo usuario -->
+    <wsdl:message name="newUserRequest">
+        <wsdl:part name="parameter" type="tns:User"/>
+    </wsdl:message>
+    <wsdl:message name="newUserResponse">
+        <wsdl:part name="parameter" element="tns:ack"/>
+    </wsdl:message>
+
+    <!-- Alta de un producto -->
+    <wsdl:message name="newProductRequest">
+        <wsdl:part name="parameter" type="tns:Product"/>
+    </wsdl:message>
+    <wsdl:message name="newProductResponse">
+        <wsdl:part name="parameter" element="tns:ack"/>
+    </wsdl:message>
+
+    <!-- Alta subasta -->
+    <wsdl:message name="newAuctionRequest">
+        <wsdl:part name="parameter" element="tns:Auction"/>
+    </wsdl:message>
+    <wsdl:message name="newActionResponse">
+        <wsdl:part name="parameter" element="tns:ack"/>
+    </wsdl:message>
+
+    <!--Consultar el monto ofertado para una subasta en particular-->
+    <wsdl:message name="consultAuctionRequest">
+        <wsdl:part name="parameter" element="tns:Auction"/> <!-- tns="auctionID" -->
+    </wsdl:message>
+    <wsdl:message name="consultAuctionResponse">
+        <wsdl:part name="parameter" type="xs:decimal"/>
+    </wsdl:message>
+
+    <!--Vender un producto -->
+    <wsdl:message name="newSaleRequest">
+        <wsdl:part name="parameter" element="tns:Sale"/>
+    </wsdl:message>
+    <wsdl:message name="newSaleResponse">
+        <wsdl:part name="parameter" element="tns:ack"/>
+    </wsdl:message>
+
+    <!-- Alta de una peticion de un cliente-->
+    <wsdl:message name="newPetitionRequest">
+        <wsdl:part name="parameter" type="tns:Product"/>
+    </wsdl:message>
+    <wsdl:message name="newPetitionResponse">
+        <wsdl:part name="parameter" element="tns:ack"/>
+    </wsdl:message>
+
+    <!-- Oferta (cotización) de un proveedor a una peticion -->
+    <wsdl:message name="newOfferRequest">
+        <wsdl:part name="parameter" element="tns:Offer"/>
+    </wsdl:message>
+    <wsdl:message name="newOfferResponse">
+        <wsdl:part name="parameter" element="tns:ack"/>
+    </wsdl:message>
+
+    <!-- Usuario oferta por una subasta -->
+    <wsdl:message name="newBidRequest">
+        <wsdl:part name="parameter" element="tns:Auction"/><!-- AuctionID -->
+    </wsdl:message>
+    <wsdl:message name="newBidResponse">
+        <wsdl:part name="parameter" element="tns:ack"/>
+    </wsdl:message>
+
+    <!--Eliminar un proveedor -->
+    <wsdl:message name="deleteUserRequest">
+        <wsdl:part name="parameter" type="tns:User"/>
+    </wsdl:message>
+    <wsdl:message name="deleteUserResponse">
+        <wsdl:part name="parameter" element="tns:ack"/>
+    </wsdl:message>
+
+    <!-- Modificar una subasta -->
+    <wsdl:message name="modifyAuctionRequest">
+        <wsdl:part name="parameter" element="tns:Auction"/>
+    </wsdl:message>
+    <wsdl:message name="modifyAuctionResponse">
+        <wsdl:part name="parameter" element="tns:ack"/>
+    </wsdl:message>
+
+    <!-- PortTypes -->
+
+    <wsdl:portType name="userPortType">
+        <wsdl:operation name="newUserRequest">
+            <wsdl:input message="tns:newUserRequest"/>
+            <wsdl:output message="tns:newUserResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:portType name="productPortType">
+        <wsdl:operation name="newProductRequest">
+            <wsdl:input message="tns:newProductRequest"/>
+            <wsdl:output message="tns:newProductResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:portType name="auctionPortType">
+        <wsdl:operation name="newAuctionRequest">
+            <wsdl:input message="tns:newAuctionRequest"/>
+            <wsdl:output message="tns:newActionResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:portType name="consultAuctionPortType">
+        <wsdl:operation name="consultAuctionRequest">
+            <wsdl:input message="tns:consultAuctionRequest"/>
+            <wsdl:output message="tns:consultAuctionResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:portType name="salePortType">
+        <wsdl:operation name="newSaleRequest">
+            <wsdl:input message="tns:newSaleRequest"/>
+            <wsdl:output message="tns:newSaleResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:portType name="petitionPortType">
+        <wsdl:operation name="newPetitionRequest">
+            <wsdl:input message="tns:newPetitionRequest"/>
+            <wsdl:output message="tns:newPetitionResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:portType name="offerPortType">
+        <wsdl:operation name="newOfferRequest">
+            <wsdl:input message="tns:newOfferRequest"/>
+            <wsdl:output message="tns:newOfferResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:portType name="newBidPortType">
+        <wsdl:operation name="newBidRequest">
+            <wsdl:input message="tns:newBidRequest"/>
+            <wsdl:output message="tns:newBidResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:portType name="deleteUserPortType">
+        <wsdl:operation name="deleteUserRequest">
+            <wsdl:input message="tns:deleteUserRequest"/>
+            <wsdl:output message="tns:deleteUserResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:portType name="modifyAuctionPortType">
+        <wsdl:operation name="modifyAuctionRequest">
+            <wsdl:input message="tns:modifyAuctionRequest"/>
+            <wsdl:output message="tns:modifyAuctionResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <!-- Bindings -->
+    <wsdl:binding name="userBinding" type="tns:userPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="newUserRequest">
+            <soap:operation soapAction="urn:#AltaUsuario"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:binding name="productBinding" type="tns:productPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="newProductRequest">
+            <soap:operation soapAction="urn:#AltaProducto"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:binding name="auctionBinding" type="tns:auctionPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="newAuctionRequest">
+            <soap:operation soapAction="urn:#AltaSubasta"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:binding name="consultAuctionBinding" type="tns:consultAuctionPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="consultAuctionRequest">
+            <soap:operation soapAction="urn:#ConsultarSubasta"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:binding name="saleBinding" type="tns:salePortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="newSaleRequest">
+            <soap:operation soapAction="urn:#VentaProducto"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:binding name="petitionBinding" type="tns:petitionPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="newPetitionRequest">
+            <soap:operation soapAction="urn:#AltaPeticion"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:binding name="offerBinding" type="tns:offerPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="newOfferRequest">
+            <soap:operation soapAction="urn:#OfertaPeticion"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:binding name="newBidBinding" type="tns:newBidPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="newBidRequest">
+            <soap:operation soapAction="urn:#OfertaSubasta"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:binding name="deleteUserBinding" type="tns:deleteUserPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="deleteUserRequest">
+            <soap:operation soapAction="urn:#EliminarUsuario"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+               <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:binding name="modifyAuctionBinding" type="tns:modifyAuctionPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="modifyAuctionRequest">
+            <soap:operation soapAction="urn:#ModificarSubasta"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+               <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <!-- Services -->
+
+    <wsdl:service name="userService">
+        <wsdl:port name="userPortType" binding="tns:userBinding">
+            <soap:address location="No target address"/>
+        </wsdl:port>
+    </wsdl:service>
+
+    <wsdl:service name="productService">
+        <wsdl:port name="productPortType" binding="tns:productBinding">
+            <soap:address location="No target address"/>
+        </wsdl:port>
+    </wsdl:service>
+
+    <wsdl:service name="auctionService">
+        <wsdl:port name="auctionPortType" binding="tns:auctionBinding">
+            <soap:address location="No target address"/>
+        </wsdl:port>
+    </wsdl:service>
+
+    <wsdl:service name="consultAuctionService">
+        <wsdl:port name="consultAuctionPortType" binding="tns:consultAuctionBinding">
+            <soap:address location="No target address"/>
+        </wsdl:port>
+    </wsdl:service>
+
+    <wsdl:service name="saleService">
+        <wsdl:port name="salePortType" binding="tns:saleBinding">
+            <soap:address location="No target address"/>
+        </wsdl:port>
+    </wsdl:service>
+
+    <wsdl:service name="petitionService">
+        <wsdl:port name="petitionPortType" binding="tns:petitionBinding">
+            <soap:address location="No target address"/>
+        </wsdl:port>
+    </wsdl:service>
+
+    <wsdl:service name="offerService">
+        <wsdl:port name="offerPortType" binding="tns:offerBinding">
+            <soap:address location="No target address"/>
+        </wsdl:port>
+    </wsdl:service>
+
+    <wsdl:service name="newBidService">
+        <wsdl:port name="newBidPortType" binding="tns:newBidBinding">
+            <soap:address location="No target address"/>
+        </wsdl:port>
+    </wsdl:service>
+
+    <wsdl:service name="deleteUserService">
+        <wsdl:port name="deleteUserPortType" binding="tns:deleteUserBinding">
+            <soap:address location="No target address"/>
+        </wsdl:port>
+    </wsdl:service>
+
+    <wsdl:service name="modifyAuctionService">
+        <wsdl:port name="modifyAuctionPortType" binding="tns:modifyAuctionBinding">
+            <soap:address location="No target address"/>
+        </wsdl:port>
+    </wsdl:service>
+
+</wsdl:definitions>
