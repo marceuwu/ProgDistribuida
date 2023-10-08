@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns1="http://com.productSchema" targetNamespace="http://com.productSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="product">
+		<xs:annotation>
+			<xs:documentation>Products to be listed/auctioned</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+					<xs:element name="productID" type="xs:ID"/>
+					<xs:element name="providerID" type="xs:ID"/>
+					<xs:element name="productName">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:whiteSpace value="preserve"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="productPrice" type="xs:decimal"/>
+					<xs:element name="productQuantity">
+						<xs:simpleType>
+							<xs:restriction base="xs:int">
+								<xs:minInclusive value="0"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="brand" type="xs:string"/>
+					<xs:element name="category">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Hogar"/>
+								<xs:enumeration value="Electronica"/>
+								<xs:enumeration value="Ropa"/>
+								<xs:enumeration value="Juguetes"/>
+								<xs:enumeration value="Deportes"/>
+								<xs:enumeration value="Libros"/>
+								<xs:enumeration value="Electrodomesticos"/>
+								<xs:enumeration value="Musica"/>
+								<xs:enumeration value="Calzado"/>
+								<xs:enumeration value="Mascotas"/>
+								<xs:enumeration value="Jardineria"/>
+								<xs:enumeration value="Salud"/>
+								<xs:enumeration value="Belleza"/>
+								<xs:enumeration value="Herramientas"/>
+								<xs:enumeration value="Vehiculos"/>
+								<xs:enumeration value="Otros"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="characteristics">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="name">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:whiteSpace value="preserve"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="value">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:whiteSpace value="preserve"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

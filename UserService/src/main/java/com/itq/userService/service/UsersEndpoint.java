@@ -27,7 +27,13 @@ public class UsersEndpoint {
 		AckValidation response = userService.insertUser(request); 
 		return response;
 	}
-	
+	@PayloadRoot(namespace = NAMESPACE_URI, localPart = "user")
+	@ResponsePayload
+	public AckValidation userModification(@RequestPayload User request) {
+		
+		AckValidation response = userService.modifyUser(request); 
+		return response;
+	}
 	@PayloadRoot(namespace = NAMESPACE_URI, localPart = "idUsuario")
 	@ResponsePayload
 	
@@ -36,4 +42,10 @@ public class UsersEndpoint {
 		AckUserInfo response = userService.consultUser(request); 
 		return response;
 	}
+	public AckUserInfo userDelete(@RequestPayload IdUsuario request) {
+		
+		AckUserInfo response = userService.deleteUser(request); 
+		return response;
+	}
+	
 }

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://com.productSchema" targetNamespace="http://com.productSchema">
+	<wsdl:types>
+		<xs:schema targetNamespace="http://com.productSchema" elementFormDefault="qualified">
+			<xs:include schemaLocation="../xsd/productSchema.xsd"/>
+			<xs:include schemaLocation="../xsd/commons.xsd"/>
+		</xs:schema>
+	</wsdl:types>
+	
+	<wsdl:message name="newProductRequest">
+		<wsdl:part name="parameter" element="tns:product"/>
+	</wsdl:message>
+
+	<wsdl:message name="modifyProductRequest">
+		<wsdl:part name="parameter" element="tns:product"/>
+	</wsdl:message>
+
+	<wsdl:message name="deleteProductRequest">
+		<wsdl:part name="parameter" element="tns:product"/>
+	</wsdl:message>
+
+	<wsdl:message name="consultProductRequest">
+		<wsdl:part name="parameter" element="tns:product"/>
+	</wsdl:message>
+
+	<wsdl:message name="ackResponse">
+		<wsdl:part name="parameter" element="tns:ack"/>
+	</wsdl:message>
+
+	<wsdl:portType name="productPortType">
+
+		<wsdl:operation name="newProductOperation">
+			<wsdl:input message="tns:newProductRequest"/>
+			<wsdl:output message="tns:ackResponse"/>
+		</wsdl:operation>
+
+		<wsdl:operation name="modifyProductOperation">
+			<wsdl:input message="tns:modifyProductRequest"/>
+			<wsdl:output message="tns:ackResponse"/>
+		</wsdl:operation>
+
+		<wsdl:operation name="deleteProductOperation">
+			<wsdl:input message="tns:deleteProductRequest"/>
+			<wsdl:output message="tns:ackResponse"/>
+		</wsdl:operation>
+
+		<wsdl:operation name="consultProductOperation">
+			<wsdl:input message="tns:consultProductRequest"/>
+			<wsdl:output message="tns:ackResponse"/>
+		</wsdl:operation>
+
+	</wsdl:portType>
+
+	<wsdl:binding name="productBinding" type="tns:productPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		
+		<wsdl:operation name="newProductOperation">
+			<soap:operation soapAction="urn:#NewOperation"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+
+		<wsdl:operation name="modifyProductOperation">
+			<soap:operation soapAction="urn:#ModifyOperation"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+
+		<wsdl:operation name="deleteProductOperation">
+			<soap:operation soapAction="urn:#DeleteOperation"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+
+		<wsdl:operation name="consultProductOperation">
+			<soap:operation soapAction="urn:#ConsultOperation"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		
+	</wsdl:binding>
+
+	<wsdl:service name="productService">
+		<wsdl:port name="productPort" binding="tns:productBinding">
+			<soap:address location="No target address"/>
+		</wsdl:port>
+	</wsdl:service>
+
+</wsdl:definitions>

@@ -11,6 +11,7 @@ import com.itq.userService.dto.User;
 public class UserService {
 
 	String msg;
+	User usurio1 = new User();
 	// Metodo bool para validar que los datos del usuario sean validos
 	public boolean isValid(User user) {
 
@@ -113,7 +114,19 @@ public class UserService {
 		
 		return ack;
 	}
-	
+	public AckValidation modifyUser(User user) {
+		AckValidation ack = new AckValidation();
+
+		if (isValid(user)) {
+			ack.setDescription("Usuario modificado correctamente");
+			ack.setCode(1);
+		} else {
+			ack.setDescription(msg);
+			ack.setCode(0);
+		}
+		
+		return ack;
+	}
 	public AckUserInfo consultUser(IdUsuario id) {
 		AckUserInfo ack = new AckUserInfo();
 		
@@ -126,6 +139,22 @@ public class UserService {
 		else
 		{
 	        ack.setDescription("Usuario no encontrado");
+	        ack.setCode(0);
+	    }
+		return ack;
+	}
+	public AckUserInfo deleteUser(IdUsuario id) {
+		AckUserInfo ack = new AckUserInfo();
+		
+		User user = getUserById(id.getId());
+		if (user != null) 
+		{
+			ack.setDescription("Usuario encontrado, se eliminó con exito");
+	        ack.setCode(1);
+	    }
+		else
+		{
+	        ack.setDescription("Usuario no encontrado, no se pudo eliminar");
 	        ack.setCode(0);
 	    }
 		return ack;
