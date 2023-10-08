@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+				  xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+				  xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" 
+				  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://com.userSchema" targetNamespace="http://com.userSchema">
+	<wsdl:types>
+		<xs:schema targetNamespace="http://com.userSchema" elementFormDefault="qualified">
+			<xs:include schemaLocation="../xsd/userSchema.xsd"/>
+			<xs:include schemaLocation="../xsd/commons.xsd"/>
+		</xs:schema>
+	</wsdl:types>
+	
+	<!-- Messages -->
+	<wsdl:message name="newUserRequest">
+		<wsdl:part name="parameter" element="tns:user"/>
+	</wsdl:message>
+
+	<wsdl:message name="modifyUserRequest">
+		<wsdl:part name="parameter" element="tns:user"/>
+	</wsdl:message>
+
+	<wsdl:message name="deleteUserRequest">
+		<wsdl:part name="parameter" type ="xs:string"/>
+	</wsdl:message>
+
+	<wsdl:message name="consultUserRequest">
+		<wsdl:part name="parameter" element="tns:idUsuario"/>
+	</wsdl:message>
+
+	<wsdl:message name="ackResponse">
+		<wsdl:part name="parameter" element="tns:ackValidation"/>
+	</wsdl:message>
+	
+	<wsdl:message name="ackResponseUserInfo">
+		<wsdl:part name="parameter" element="tns:ackUserInfo"/>
+	</wsdl:message>
+	
+	<wsdl:portType name="userPortType">
+	
+		<wsdl:operation name="newUserOperation">
+			<wsdl:input message="tns:newUserRequest"/>
+			<wsdl:output message="tns:ackResponse"/>
+		</wsdl:operation>
+
+		<wsdl:operation name="modifyUserOperation">
+			<wsdl:input message="tns:modifyUserRequest"/>
+			<wsdl:output message="tns:ackResponse"/>
+		</wsdl:operation>
+
+		<wsdl:operation name="deleteUserOperation">
+			<wsdl:input message="tns:deleteUserRequest"/>
+			<wsdl:output message="tns:ackResponse"/>
+		</wsdl:operation>
+
+		<wsdl:operation name="consultUserOperation">
+			<wsdl:input message="tns:consultUserRequest"/>
+			<wsdl:output message="tns:ackResponseUserInfo"/>
+		</wsdl:operation>
+		
+	</wsdl:portType>
+	
+	<wsdl:binding name="userBinding" type="tns:userPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		
+		<wsdl:operation name="newUserOperation">
+			<soap:operation soapAction="urn:#NewOperation"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+
+		<wsdl:operation name="modifyUserOperation">
+			<soap:operation soapAction="urn:#ModifyOperation"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+
+		<wsdl:operation name="deleteUserOperation">
+			<soap:operation soapAction="urn:#DeleteOperation"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+
+		<wsdl:operation name="consultUserOperation">
+			<soap:operation soapAction="urn:#ConsultOperation"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		
+	</wsdl:binding>
+	
+	<wsdl:service name="userService">
+		<wsdl:port name="userPort" binding="tns:userBinding">
+			<soap:address location="No target address"/>
+		</wsdl:port>
+	</wsdl:service>
+	
+</wsdl:definitions>

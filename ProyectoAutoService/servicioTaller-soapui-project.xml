@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="6c56c8bd-f17a-4b36-b7da-a2cd802a73cd" activeEnvironment="Default" name="servicioTaller" resourceRoot="" soapui-version="5.7.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="35008770-3f1f-40d4-ba0b-f003fc2af731" wsaVersion="NONE" name="CarBinding" type="wsdl" bindingName="{http://com.taller}CarBinding" soapVersion="1_1" anonymous="optional" definition="file:/C:/Users/marce/source/repos/ProgDistribuida/ProyectoAutoService/AutoService/src/main/resources/wsdl/servicioTaller.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\marce\source\repos\ProgDistribuida\ProyectoAutoService\AutoService\src\main\resources\wsdl\servicioTaller.wsdl"><con:part><con:url>file:\C:\Users\marce\source\repos\ProgDistribuida\ProyectoAutoService\AutoService\src\main\resources\wsdl\servicioTaller.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://com.taller" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://com.taller">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://com.taller" elementFormDefault="qualified">
+      <xs:include schemaLocation="../xsd/taller.xsd"/>
+      <xs:include schemaLocation="../xsd/commons.xsd"/>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="autoRequest">
+    <wsdl:part name="parameter" element="tns:auto"/>
+  </wsdl:message>
+  <wsdl:message name="servicioRequest">
+    <wsdl:part name="parameter" element="tns:servicio"/>
+  </wsdl:message>
+  <wsdl:message name="ackResponse">
+    <wsdl:part name="parameter" element="tns:ack"/>
+  </wsdl:message>
+  <wsdl:portType name="CarPortType">
+    <wsdl:operation name="insertCarOperation">
+      <wsdl:input message="tns:autoRequest"/>
+      <wsdl:output message="tns:ackResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="updateServiceOperation">
+      <wsdl:input message="tns:servicioRequest"/>
+      <wsdl:output message="tns:ackResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CarBinding" type="tns:CarPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="insertCarOperation">
+      <soap:operation soapAction="urn:#NewOperation"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateServiceOperation">
+      <soap:operation soapAction="urn:#NewOperation"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CarService">
+    <wsdl:port name="CarPort" binding="tns:CarBinding">
+      <soap:address location="No target address"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>file:\C:\Users\marce\source\repos\ProgDistribuida\ProyectoAutoService\AutoService\src\main\resources\xsd\taller.xsd</con:url><con:content><![CDATA[<xs:schema targetNamespace="http://com.taller" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns1="http://com.taller">
+  <xs:element name="auto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="modelo">
+          <xs:simpleType>
+            <xs:restriction base="xs:int">
+              <xs:minInclusive value="1950"/>
+              <xs:maxInclusive value="2050"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="color" type="xs:string" minOccurs="0"/>
+        <xs:element name="marca">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="VW"/>
+              <xs:enumeration value="Ford"/>
+              <xs:enumeration value="Chevrolet"/>
+              <xs:enumeration value="Nissan"/>
+              <xs:enumeration value="BMW"/>
+              <xs:enumeration value="Audi"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="idAuto">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[A-Z]{2}[0-9]{3}"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="idClient">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[A-Z]{3}[0-9]{4}"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="servicio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="tipo">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="Mayor"/>
+              <xs:enumeration value="Menor"/>
+              <xs:enumeration value="Alineación"/>
+              <xs:enumeration value="Balanceo"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>file:\C:\Users\marce\source\repos\ProgDistribuida\ProyectoAutoService\AutoService\src\main\resources\xsd\commons.xsd</con:url><con:content><![CDATA[<xs:schema targetNamespace="http://com.taller" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns1="http://com.taller">
+  <xs:element name="ack">
+    <xs:annotation>
+      <xs:documentation>Describe la estructuras comunes para la gestión de un taller mecánico.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="code" type="xs:int"/>
+        <xs:element name="description" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>No target address</con:endpoint></con:endpoints><con:operation id="ed47cdf9-5071-4247-bcf0-cb8552fb1512" isOneWay="false" action="urn:#NewOperation" name="insertCarOperation" bindingOperationName="insertCarOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d649d4ca-ffdf-4c56-9d14-00dc0270d914" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8081/ws/servicio.wsdl</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com.taller">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:auto>\r
+         <com:modelo>2019</com:modelo>\r
+         <!--Optional:-->\r
+         <com:color>rojo</com:color>\r
+         <com:marca>BMW</com:marca>\r
+         <com:idAuto>AB123</com:idAuto>\r
+         <com:idClient>CDE4567</com:idClient>\r
+      </com:auto>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#NewOperation"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="378ae7f0-1f07-4ab9-86c5-bd2aa78653d0" isOneWay="false" action="urn:#NewOperation" name="updateServiceOperation" bindingOperationName="updateServiceOperation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7fef5867-ceab-413d-ad22-87721968513e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>No target address</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://com.taller">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <com:servicio>\r
+         <com:tipo>?</com:tipo>\r
+      </com:servicio>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:#NewOperation"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

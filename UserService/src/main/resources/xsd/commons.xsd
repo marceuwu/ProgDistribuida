@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns1="http://com.userSchema" targetNamespace="http://com.commons" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!-- Importar el espacio de nombres del primer esquema -->
+	<xs:import namespace="http://com.userSchema" schemaLocation="userSchema.xsd"/>
+
+	<xs:element name="ackValidation">
+		<xs:annotation>
+			<xs:documentation>Describe la estructuras comunes para la gestión del sistema de compra/venta y subastas.</xs:documentation>
+		</xs:annotation>
+		<!-- Código y descripción comunes -->
+		<xs:complexType>
+			<xs:sequence>
+			<xs:element name="code" type="xs:int"></xs:element>
+			<xs:element name="description" type="xs:string"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ackUserInfo">
+		<!-- Código y descripción comunes -->
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="code" type="xs:int"/>
+				<xs:element name="description" type="xs:string"/>
+				<!-- Incluir el elemento "user" -->
+				<xs:element ref="tns1:user"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+	
